@@ -1,1 +1,0 @@
-print("pakistan zinda bad")
