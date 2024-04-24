@@ -150,3 +150,110 @@ five_stadiums: list[str] = ['Emirates Stadium', 'Santiago Bernabéu', 'Allianz A
 # Print your array in its original order.
 # print("Original order:" , *five_stadiums)
 print("Original order:" , ' , '.join(five_stadiums))
+
+
+# • Print your array in alphabetical order without modifying the actual list.
+sorted_stadiums = sorted(five_stadiums) # created new sorted list, leaving the original one unchanged.
+print("Alphabetical order:", sorted_stadiums)
+
+# • Show that your array is still in its original order by printing it.
+print("Still In Original order:" , five_stadiums)
+
+# • Print your array in reverse alphabetical order without changing the order of the original list.
+reversed_sorted_stadiums = sorted(five_stadiums , reverse=True)
+print("Reverse alphabetical order:" , reversed_sorted_stadiums)
+
+# • Show that your array is still in its original order by printing it again.
+print("Still In Original order:" , five_stadiums)
+
+# • Reverse the order of your list. Print the array to show that its order has changed.
+five_stadiums.reverse()
+print("Reverse order:" , five_stadiums )
+
+# • Reverse the order of your list again. Print the list to show it’s back to its original order.
+five_stadiums.reverse()
+print("Back to original order:" , five_stadiums)
+
+# • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+five_stadiums.sort()
+print("Alphabetical order with modifying list:" , five_stadiums)
+
+# • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+five_stadiums.sort(reverse=False)
+print("Reverse alphabetical order again:" , five_stadiums)
+
+# Q20: Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities,
+#  languages, or anything else you’d like. Write a program that creates a list containing these items.
+
+mountains: list[str] = ["Mount Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"]
+rivers: list[str] = ["Nile", "Amazon", "Yangtze", "Mississippi", "Danube"]
+countries: list[str] = ["Japan", "Palestine", "Germany", "Australia", "Russia"]
+cities: list[str] = ["Tokyo", "Jerusalem", "Berlin", "Sydney", "Moscow"]
+languages: list[str] = ["English", "Mandarin Chinese", "Spanish", "Urdu", "Arabic"]
+
+print("Mountains:", mountains)
+print("Rivers:", rivers)
+print("Countries:", countries)
+print("Cities:", cities)
+print("Languages:", languages)
+
+
+# Q21: They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+footballer = {
+    'name': 'Cristiano Ronaldo',
+    'position': 'Forward',
+    'nationality': 'Portuguese',
+    'age': 39,
+    'club': 'Al-Nassr'
+}
+print(footballer)
+
+# Q22: Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen.
+# Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+myArr: list[str] = ['One', 'Two', 'Three', 'Four']
+#Accessing an index that doesn't exist, will print undefined
+# print(myArr[5])
+# Make sure you correct the error before closing the program.
+print(myArr)
+
+# Q23: Conditional Tests: Write a series of conditional tests. Print a statement describing each test 
+# and your prediction for the results of each test. Your code should look something like this:
+car = 'subaru'
+# • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+# Test 1: Equality (==)
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')  # Output: True
+
+# Test 2: Not Equal (!=)
+print("Is car != 'honda'? I predict False.")
+print(car != 'honda')  # Output: True
+
+# Test 3: Regular Equality (==) - checks type and value
+print("Is car == 'toyota'? I predict False.")
+print(car == 'toyota')  # Output: False (regular equality is sufficient)
+
+# Test 4: Accessing first character (charAt() equivalent)
+print("Is car[0] == 's'? I predict True.")
+print(car[0] == 's')  # Output: True (access first character using indexing)
+
+# Test 5: Not Equal (!=)
+print("Is car != 'subaru'? I predict False.")
+print(car != 'subaru')  # Output: False
+
+# Test 6: String length (length property)
+print("Is len(car) == 6? I predict True.")
+print(len(car) == 6)  # Output: True (use `len()` for string length)
+
+# Test 7: String length comparison (alternative)
+print("Is len(car) == 5? I predict False.")
+print(len(car) == 5)  # Output: False (correct usage of `len()`)
+
+# Test 8: Convert to uppercase (toUpperCase() equivalent)
+print("Is car.upper() == 'SUBARU'? I predict True.")
+print(car.upper() == 'SUBARU')  # Output: True (use `upper()` for uppercase)
+
+# Test 9: Regular equality after conversion
+print("Is car == 'Tesla'? I predict False.")
+print(car == 'Tesla')  # Output: False
+
