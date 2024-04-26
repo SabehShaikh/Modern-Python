@@ -257,3 +257,64 @@ print(car.upper() == 'SUBARU')  # Output: True (use `upper()` for uppercase)
 print("Is car == 'Tesla'? I predict False.")
 print(car == 'Tesla')  # Output: False
 
+# Q24:More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, 
+# write more tests. Have at least one True and one False result for each of the following:
+
+favorite_club : str = "Real Madrid"
+
+# • Tests for equality 
+print("Is Fave Club == Real Madrid?")
+print(favorite_club == 'Real Madrid')
+
+#  inequality with strings
+print("Is Fave Club != Real Madrid?")
+print(favorite_club != 'Real Madrid')
+
+# • Tests using the lower case function
+print(f"Is {favorite_club.lower()} == real madrid?")
+print(favorite_club.lower() == 'real madrid')
+
+# • Numerical tests
+number : int = 23
+
+# involving equality
+print(f"Is {number} == 23")
+print(number == 23)
+
+# involving inequality
+print(f"Is {number} != 23")
+print(number != 23)
+
+# greater than
+print(f"Is {number} > 23")
+print(number > 23)
+
+# less than
+print(f"Is {number} < 23")
+print(number < 23)
+
+# greater than or equal to
+print(f"Is {number} >= 23")
+print(number >= 23)
+
+# less than or equal to
+print(f"Is {number} <= 23")
+print(number <= 23)
+
+# • Tests using "and" 
+print(f"Is {number} > 15 and {number} < 20")
+print(number > 15 and number < 20)
+
+# • Tests using "or" 
+print(f"Is {number} > 25 or {number} < 24")
+print(number > 25 or number < 24)
+
+# • Test whether an item is in a array
+players : list[str] = ['Vinicius', 'Saka', 'Odegaard', 'Bellingham']
+print(players)
+print("Is 'Saka' in the list?")
+print('Saka' in players)
+
+# • Test whether an item is not in a array
+print("Is 'Modric' not in the list?")
+print('Modric' not in players)
